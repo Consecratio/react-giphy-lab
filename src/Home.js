@@ -68,12 +68,22 @@ export default class Home extends Component {
 
   render() {
     return (
-      <SearchContainer
-        items={jsObject.data}
-        handleSearch={this.handleSearchChange}
-        value={this.state.filterValue}
-        results={this.state.displayResults}
-      />
+      <main>
+        <section className="jumbotron text-center">
+          <div className="container">
+            <h1 className="jumbotron-heading">Giphy Search</h1>
+            <p className="lead text-muted">The true source of all things giphy...</p>
+          </div>
+        </section>
+        <section className="container">
+          <SearchContainer
+            items={jsObject.data}
+            handleSearch={this.handleSearchChange}
+            value={this.state.filterValue}
+            results={this.state.displayResults}
+          />
+        </section>
+      </main>
     )
   }
 }
