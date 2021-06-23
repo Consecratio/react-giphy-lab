@@ -39,7 +39,12 @@ const jsObject = {
   }
 }
 
+// move this over to SearchContainer
+let apiKey = process.env.REACT_APP_GIPHY_API_KEY
+console.log(apiKey)
+
 export default class Home extends Component {
+  // move this to SearchContainer
   constructor(props) {
     super(props)
     this.state = {
