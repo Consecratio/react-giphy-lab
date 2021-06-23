@@ -1,5 +1,5 @@
-import { Component } from 'react'
-import SearchContainer from './SearchContainer'
+import React, { Component } from 'react'
+import SearchContainer from './components/SearchContainer'
 
 const jsObject = {
   "data": [
